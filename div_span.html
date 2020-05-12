@@ -1,0 +1,43 @@
+<!--
+  div, spans, ids and classes
+  example of how span overrides id's
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    #top {
+      font-size: 80px;
+      color: red;
+    }
+
+    #middle {
+      font-size: 40px;
+    }
+
+    #bottom {
+      font-size: 20px;
+    }
+
+    .name {
+      font-weight: bold;
+      color: blue;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="top">
+    This is my <span class="name">top</span> div
+  </div>
+  <div id="middle">
+    This is my <span class="name">middle</span> div
+  </div>
+  <div id="bottom">
+    This is my <span class="name">bottom</span> div
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+  <!--
+    Testing out some css properties
+    table inside a div
+
+    WHY
+    I set the margin to be 30 px for the table; i expected the table (bg orange
+    to be inside the div (for which the bg is peach) and it doesn't really work
+    the top of the table does move 30 (margin applies) but it's white (so not inside div?) the sides do get the 30px margin are inside the div ... why?
+    test by adding/removing the margin property inside the table style
+
+    each row in my table doesn't have its own border like defined ... i also
+    explicitly set border-collapse to be separate and that didn't' do anything
+  -->
+
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <title> Presidents</title>
+
+    <style>
+      div {
+        background-color: peachpuff;
+        width: 1200px;
+        height: 1200px;
+      }
+
+      table {
+        width: 70%;
+        padding: 20px;
+        margin: 50px;
+        border: 10px solid black;
+        background-color: peru;
+        border-collapse: separate;
+      }
+
+      th,
+      td {
+        font-size: 10px;
+        padding: 10px;
+        text-align: center;
+      }
+
+      th {
+        border: 5px solid green;
+      }
+
+      td {
+        margin: 30px;
+        border: 4px solid magenta;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <table>
+        <!-- tr: table row, th: table header(bolded, not mandatory), td: table data -->
+        <tr>
+          <th>|----- Header 1 -----|</th>
+          <th>----- Header 2 -----|</th>
+        </tr>
+        <tr>
+          <td>row 0,col 0</td>
+          <td>row 0,col 1</td>
+        </tr>
+        <tr>
+          <td>row 1,col 0</td>
+          <td>row 1,col 1</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+
+  </html>
