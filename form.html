@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <a href="./index.html">home</a>
+  <br>
+  <form>
+    <div>
+      Name <input name="name" type="text" placeholder="Full Name">
+      <br>
+      Password <input name="password" type="password" placeholder="secret">
+      <br>
+      Age <input name="age" type="number" placeholder="Age">
+      <br>
+      DOB <input name="dob" type="date">
+      <br>
+    </div>
+
+    <div>
+      Favorite color?
+      <input name="color" type="radio" value="red"> Red
+      <input name="color" type="radio" value="Green"> Green
+      <input name="color" type="radio" value="Blue"> Blue
+      <input name="color" type="radio" value="Other"> Other
+    </div>
+
+    <div>
+      <input name="country" list="countries" placeholder="country">
+      <datalist id="countries">
+        <option value="Afghanistan">
+        <option value="USA">
+        <option value="Canada">
+        <option value="Italy">
+        <option value="Pakistan">
+      </datalist>
+
+    </div>
+
+    <button> Submit</button>
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <a href="./index.html">home</a>
+  <br>
+  <title>Testing CSS selectors</title>
+
+  <!--
+    // a, b  Multiple element selector
+    ol, li    => both ol and li
+
+    // All descendants selector
+    ol li     => all li inside ol (including grandchildren)
+
+    // Child selector
+    ol > li   => all li direct children of ol
+
+    // a + b  Adjacent sibling selector
+
+    // [a=b] ATTRIBUTES selector
+    [input][type=text] all input items with attribute 'type' set to 'text' will be orange
+
+    // a:b  PSEUDO CLASS selector - special state of an element
+    button:hover      => when the button's 'hover' status(property?) is true change it to teal
+
+    // Pseudo element selector
+    a::before        => append something before a tag, in our case we add text before out link text
+
+    p::selection     => something applied when it's selected
+  -->
+  <style>
+    input[type=text] {
+      background-color: orange;
+    }
+
+    input[type=password] {
+      background-color: red;
+    }
+
+    ol,
+    li {
+      border: dashed;
+    }
+
+    ol li {
+      border: dotted;
+    }
+
+    ol>li {
+      color: blue;
+      border: double;
+    }
+
+    ul>li {
+      color: pink;
+    }
+
+    button {
+      background-color: green;
+    }
+
+    button:hover {
+      background-color: TEAL;
+    }
+
+    P::selection {
+      color: green;
+      background-color: yellow;
+    }
+
+    a::before {
+      content: "\21d2 Click here: ";
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <p> Testing out some CSS selector stuff including multiple selectors, child, attributes. when you select stuff from
+    this paragraph it should be highlighted in green </p>
+
+  <ol>
+    I'm SOME DECEDENT of OL, all of me should be be dashed default color
+    <li> list item 1 - i'm a direct DECEDENT of OL so I'm blue and double dashed </li>
+    <ul>
+      <li> sub list item 1 - i'm SOME DECEDENT of OL so I'm DOTTED I'm DIRECT DECEDENT OF UL so I'm pink </li>
+    </ul>
+    <li> list item 2 - i'm a direct DECEDENT of OL so I'm blue and double dashed </li>
+  </ol>
+
+  <input type="text" placeholder="ORG cuz TYPE TEXT">
+  <input type="password" placeholder="RED cuz TYPE PASSWORD">
+
+  <ul>
+    <li><a href="#"> one link</a></li>
+    <li><a href="#"> another link</a></li>
+    <li><a href="#"> third link</a></li>
+  </ul>
+
+  <button hover=true> Hover me TEAL</button>
+
+</body>
+
+
+</html
