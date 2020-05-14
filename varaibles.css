@@ -1,0 +1,30 @@
+/*
+SASS file using variables, nesting, and inheritance
+*/
+.success, .failure {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px; }
+
+.success {
+  background-color: green; }
+
+.failure {
+  background-color: red; }
+
+div ul {
+  font-size: 15px;
+  color: orange; }
+div ol {
+  font-size: 15px;
+  color: brown; }
+div p {
+  color: green; }
+
+p {
+  color: orange; }
+
+/*# sourceMappingURL=varaibles.css.map */

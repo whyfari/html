@@ -1,0 +1,44 @@
+/*
+SASS file using variables, nesting, and inheritance
+*/
+
+$color : orange;
+
+%message {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+}
+
+.success {
+  @extend %message;
+  background-color: green;
+}
+
+.failure {
+  @extend %message;
+  background-color: red;
+}
+
+div {
+  ul {
+    font-size: 15px;
+    color: $color;
+  }
+
+  ol {
+    font-size: 15px;
+    color: brown;
+  }
+
+  p {
+    color: green;
+  }
+}
+
+p {
+  color: $color;
+}
